@@ -1,7 +1,7 @@
 # Sapien Architecture
 
 [![Architecture Version](https://img.shields.io/badge/version-2026.05-green.svg)](#)
-[![License: AGPLv3](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: AGPLv3](https://img.shields.io/badge/License-AGPLv3-yellow.svg)](LICENSE)
 
 A Didactic, Generational Framework for Neuro-Symbolic Cognitive AI. Sapien shifts the paradigm from machine *training* to machine *teaching*, decoupling statistical pattern recognition from long-term memory accumulation.
 
