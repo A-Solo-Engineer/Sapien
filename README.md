@@ -118,7 +118,7 @@ There is no code to run yet. The best starting points are:
 1. Read [ARCHITECTURE.md](ARCHITECTURE.md) for the complete technical specification
 2. Read the introductory article: [Sapien on dev.to](https://dev.to/admin-forestritium/sapien-teaching-ai-to-think-like-humans-instead-of-predicting-patterns-5nd)
 3. Read [LIMITATIONS.md](LIMITATIONS.md) for honest assessment of open problems
-4. Join the discussion in [Forestritium Discord]([https://discord.gg/Q64wr956](https://discord.gg/ezc9Y7eeQt))
+4. Join the discussion in [Forestritium Discord](https://discord.gg/ezc9Y7eeQt)
 
 ---
 
@@ -137,7 +137,7 @@ Areas where contribution is most needed:
 
 ## Author
 
-**Aarav** — [A Solo Engineer](https://youtube.com/@ASoloEngineer)
+**Aarav** | Forestritium
 
 Date of Idea: 28 May 2026.
 
