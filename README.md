@@ -111,6 +111,30 @@ Sapien is currently a conceptual architecture and active research direction. The
 
 ---
 
+## Getting Started
+
+There is no code to run yet. The best starting points are:
+
+1. Read [ARCHITECTURE.md](ARCHITECTURE.md) for the complete technical specification
+2. Read the introductory article: [Sapien on dev.to](https://dev.to/admin-forestritium/sapien-teaching-ai-to-think-like-humans-instead-of-predicting-patterns-5nd)
+3. Read [LIMITATIONS.md](LIMITATIONS.md) for honest assessment of open problems
+4. Join the discussion in [Forestritium Discord](https://discord.gg/Q64wr956)
+
+---
+
+## Contributing
+
+Sapien needs researchers, thinkers, and builders. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute.
+
+Areas where contribution is most needed:
+- Theoretical refinement of the knowledge graph design
+- Formal mathematical specification of the didactic episode
+- Approaches to the grounding problem
+- Contradiction resolution and probabilistic epistemology
+- Computational efficiency proposals
+
+---
+
 ## Author
 
 **Aarav** — [A Solo Engineer](https://youtube.com/@ASoloEngineer)
