@@ -90,36 +90,44 @@ Current highest-priority research questions:
 How can Sapien acquire grounded meaning without physical embodiment?
 What role could simulated environments, multimodal perception, or
 robotics integration play? This is the deepest open problem.
+See LIMITATIONS.md §1 for detailed analysis.
 
 **Formal didactic episode specification**
 A mathematically rigorous definition of the didactic episode learning
 loop. What are the formal termination conditions? How is epistemic
 closure formally defined and measured?
+See DIDACTIC_SPEC.md for the current proposal and its open problems.
 
 **Knowledge graph scalability**
 How does the DAG scale to billions of nodes? What pruning, compression,
 and archival strategies preserve WHY chains while maintaining practical
 retrieval latency?
+See SCHEMA_SPEC.md §11 for current open problems in the schema.
 
 **WHY chain depth termination**
 How do you define an axiomatic floor — the set of foundational concepts
 accepted without further justification? How is this floor selected and
 validated?
+See AXIOMATIC_FLOOR.md for the current proposal and its open problems.
 
 **Curiosity reward formalization**
 A formal specification of the productive utility gate that distinguishes
 productive from pathological curiosity. How is semantic uniqueness
 measured? How is productive utility quantified?
+See REWARD_SPEC.md for the current specification and its open problems.
 
 **Contradiction resolution**
 How does Sapien represent and reason about genuinely unresolved
 contradictions — contested science, philosophical disagreement,
 uncertain empirical claims? Probabilistic epistemology approaches
 are especially welcome.
+See CONTRADICTION_FRAMEWORK.md for the current framework and
+its open problems.
 
 **Generational drift measurement**
 How do you measure reasoning drift across generations? What metrics
 indicate healthy evolution versus problematic divergence?
+See LIMITATIONS.md §3 for detailed analysis.
 
 ---
 
@@ -130,6 +138,11 @@ Before contributing, read:
 - [README.md](README.md) — project overview
 - [ARCHITECTURE.md](ARCHITECTURE.md) — complete technical specification
 - [LIMITATIONS.md](LIMITATIONS.md) — known open problems
+- [DIDACTIC_SPEC.md](DIDACTIC_SPEC.md) — formal episode specification
+- [SCHEMA_SPEC.md](SCHEMA_SPEC.md) — knowledge graph schema
+- [REWARD_SPEC.md](REWARD_SPEC.md) — reward signal specification
+- [AXIOMATIC_FLOOR.md](AXIOMATIC_FLOOR.md) — axiomatic floor proposal
+- [CONTRADICTION_FRAMEWORK.md](CONTRADICTION_FRAMEWORK.md) — contradiction framework
 - Open issues — what is already being discussed
 
 **Step 2 — Find your contribution**

@@ -6,7 +6,7 @@ a commitment to specific timelines.
 
 ---
 
-## Phase 1 — Documentation (Current)
+## Phase 1 — Documentation ✓ Complete
 
 **Goal:** Establish a complete, honest, and rigorous theoretical
 foundation before any implementation begins.
@@ -17,20 +17,27 @@ foundation before any implementation begins.
 - [x] Contributing guidelines (CONTRIBUTING.md)
 - [x] Architecture diagram (assets/architecture.svg)
 - [x] Introductory article published
-- [ ] Formal mathematical specification of the didactic episode
-- [ ] Formal DAG schema specification
-- [ ] Reward signal formal definition
-- [ ] Axiomatic floor initial proposal
-- [ ] Contradiction resolution framework proposal
+- [x] Formal mathematical specification of the didactic episode (DIDACTIC_SPEC.md)
+- [x] Formal DAG schema specification (SCHEMA_SPEC.md)
+- [x] Reward signal formal definition (REWARD_SPEC.md)
+- [x] Axiomatic floor initial proposal (AXIOMATIC_FLOOR.md)
+- [x] Contradiction resolution framework proposal (CONTRADICTION_FRAMEWORK.md)
 
 **Phase 1 completion criteria:**
 The architecture is specified completely enough that an
 independent researcher could begin a prototype implementation
 using only this documentation.
 
+**Phase 1 status: COMPLETE — 28 May 2026**
+
 ---
 
-## Phase 2 — Prototype
+> Phase 1 produced nine documentation files totalling the full
+> theoretical specification of Sapien. Phase 2 begins with a
+> working foundation rather than open questions.
+
+
+## Phase 2 — Prototype (Next)
 
 **Goal:** A minimal working proof of concept demonstrating
 the core didactic episode loop and knowledge graph.
@@ -42,6 +49,13 @@ the core didactic episode loop and knowledge graph.
 - Didactic episode loop (question generation and gap tracking)
 - SEED node creation
 - Basic WHY chain storage
+
+**Reference documents for Phase 2 implementation:**
+- DIDACTIC_SPEC.md — episode state machine and termination logic
+- SCHEMA_SPEC.md — node and edge schema (Section 9 recommends
+  relational database for prototype storage)
+- REWARD_SPEC.md — productive utility gate and curiosity reward
+- AXIOMATIC_FLOOR.md — floor node initialization
 
 **Explicitly out of scope for Phase 2:**
 - Generational handoff
@@ -155,6 +169,6 @@ Regardless of where the roadmap goes:
 
 ---
 
-*Roadmap last updated: 28 May 2026*
+*Roadmap last updated: 29 May 2026 — Phase 1 marked complete*
 *Sapien — AGPLv3*
 *Author: Aarav — A Solo Engineer*

@@ -107,7 +107,23 @@ See [LIMITATIONS.md](LIMITATIONS.md) for detailed analysis of each problem.
 
 ## Project Status
 
-Sapien is currently a conceptual architecture and active research direction. There is no implementation yet. The current phase is documentation, theoretical refinement, and community feedback.
+Sapien has completed Phase 1 of its development roadmap —
+documentation and theoretical specification — and is ready to
+advance to Phase 2: prototype implementation.
+
+Phase 1 produced a complete theoretical foundation:
+- Core architecture specification
+- Known limitations analysis
+- Formal mathematical specification of the didactic episode
+- Formal knowledge graph schema
+- Reward signal formal definition
+- Axiomatic floor proposal
+- Contradiction resolution framework
+
+There is no implementation yet. Phase 2 begins with a documented
+specification complete enough for an independent prototype.
+
+See [ROADMAP.md](ROADMAP.md) for the full development plan.
 
 ---
 
@@ -118,7 +134,12 @@ There is no code to run yet. The best starting points are:
 1. Read [ARCHITECTURE.md](ARCHITECTURE.md) for the complete technical specification
 2. Read the introductory article: [Sapien on dev.to](https://dev.to/admin-forestritium/sapien-teaching-ai-to-think-like-humans-instead-of-predicting-patterns-5nd)
 3. Read [LIMITATIONS.md](LIMITATIONS.md) for honest assessment of open problems
-4. Join the discussion in [Forestritium Discord](https://discord.gg/ezc9Y7eeQt)
+4. Read [DIDACTIC_SPEC.md](DIDACTIC_SPEC.md) for the formal learning loop specification
+5. Read [SCHEMA_SPEC.md](SCHEMA_SPEC.md) for the knowledge graph schema
+6. Read [REWARD_SPEC.md](REWARD_SPEC.md) for the curiosity reward system
+7. Read [AXIOMATIC_FLOOR.md](AXIOMATIC_FLOOR.md) for the WHY chain termination proposal
+8. Read [CONTRADICTION_FRAMEWORK.md](CONTRADICTION_FRAMEWORK.md) for contradiction handling
+9. Join the discussion in [Forestritium Discord](https://discord.gg/ezc9Y7eeQt)
 
 ---
 

@@ -2,7 +2,8 @@
 
 Sapien does not have a working implementation yet.
 
-The current phase is documentation and theoretical refinement.
+Phase 1 — Documentation — is now complete.
+The project is preparing to enter Phase 2: Prototype.
 There is no code to run, no model to download, and no API to call.
 
 ---
@@ -13,6 +14,14 @@ There is no code to run, no model to download, and no API to call.
 Start with [README.md](README.md) for an overview.
 Then read [ARCHITECTURE.md](ARCHITECTURE.md) for the complete
 technical specification.
+
+**Read the formal specifications:**
+Phase 1 produced five formal specification documents:
+- [DIDACTIC_SPEC.md](DIDACTIC_SPEC.md) — mathematical model of the learning loop
+- [SCHEMA_SPEC.md](SCHEMA_SPEC.md) — knowledge graph node and edge schema
+- [REWARD_SPEC.md](REWARD_SPEC.md) — curiosity reward function and gating
+- [AXIOMATIC_FLOOR.md](AXIOMATIC_FLOOR.md) — WHY chain termination proposal
+- [CONTRADICTION_FRAMEWORK.md](CONTRADICTION_FRAMEWORK.md) — contradiction handling
 
 **Understand the limitations:**
 Read [LIMITATIONS.md](LIMITATIONS.md) for an honest assessment
@@ -33,12 +42,16 @@ theoretical work, architecture refinements, or research references.
 ## Roadmap
 
 ```
-Phase 1 — Documentation          ← current
+Phase 1 — Documentation          ✓ Complete
   Architecture specification
   Limitations analysis
-  Contributing guidelines
+  Formal didactic episode spec
+  Knowledge graph schema
+  Reward signal specification
+  Axiomatic floor proposal
+  Contradiction framework
 
-Phase 2 — Prototype
+Phase 2 — Prototype              ← current
   Knowledge graph implementation
   Basic didactic episode loop
   Single-instance proof of concept
@@ -68,5 +81,5 @@ If you want to be notified when implementation begins:
 
 ---
 
-*Sapien — AGPLv3 — 28 May 2026*
+*Sapien — AGPLv3 — 29 May 2026*
 *Author: Aarav — A Solo Engineer*
