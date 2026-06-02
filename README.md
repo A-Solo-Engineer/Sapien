@@ -110,8 +110,7 @@ See [LIMITATIONS.md](LIMITATIONS.md) for detailed analysis of each problem.
 ## Project Status
 
 Sapien has completed Phase 1 of its development roadmap —
-documentation and theoretical specification — and is ready to
-advance to Phase 2: prototype implementation.
+documentation and theoretical specification — and is currently at Phase 2: prototype implementation.
 
 Phase 1 produced a complete theoretical foundation:
 - Core architecture specification
@@ -121,9 +120,6 @@ Phase 1 produced a complete theoretical foundation:
 - Reward signal formal definition
 - Axiomatic floor proposal
 - Contradiction resolution framework
-
-There is no implementation yet. Phase 2 begins with a documented
-specification complete enough for an independent prototype.
 
 See [ROADMAP.md](ROADMAP.md) for the full development plan.
 
