@@ -37,7 +37,7 @@ using only this documentation.
 > working foundation rather than open questions.
 
 
-## Phase 2 — Prototype (Next)
+## Phase 2 — Prototype (Work In Progress)
 
 **Goal:** A minimal working proof of concept demonstrating
 the core didactic episode loop and knowledge graph.
