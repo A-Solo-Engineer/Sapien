@@ -19,7 +19,7 @@ Phase 2/
 │   │   ├── state.py               # Epistemic state management (140 lines)
 │   │   └── episode_loop.py        # Main episode orchestration (330+ lines)
 │   ├── agents/
-│   │   ├── teacher.py             # Teacher interface + MockTeacher (150 lines)
+│   │   ├── teacher.py             # Teacher interface + DefaultTeacher stub (150 lines)
 │   │   └── learner.py             # Learner agent implementation (200 lines)
 │   └── core/
 │       ├── seed.py                # SEED node logic (80 lines)
@@ -70,7 +70,7 @@ Phase 2/
 
 #### ✓ Teacher & Learner Agents
 - TeacherInterface abstraction (ready for real LLM integration)
-- MockTeacher for testing (deterministic responses)
+- DefaultTeacher stub for testing (deterministic responses)
 - Learner with full graph management
 - Gap identification and question generation
 - Answer integration into graph
@@ -128,7 +128,7 @@ Phase 2/
 
 ### In Scope (Implemented)
 ✓ Single learner instance  
-✓ Single teacher model (MockTeacher; API stub ready)  
+✓ Single teacher model (DefaultTeacher stub; API-ready)  
 ✓ Basic DAG implementation  
 ✓ Didactic episode loop  
 ✓ SEED node creation  
@@ -147,7 +147,7 @@ Phase 2/
 ### Strengths
 - **Clear separation of concerns:** graph, episode, agents, core modules
 - **SOLID principles:** Interfaces (TeacherInterface), dependency injection, single responsibility
-- **Testable design:** MockTeacher for reproducible testing
+- **Testable design:** DefaultTeacher stub for reproducible testing
 - **Comprehensive documentation:** Docstrings, inline comments, README
 - **Spec compliance:** Direct references to specification sections
 - **Logging:** Detailed event logging for episode tracing
@@ -182,7 +182,7 @@ Produces:
 
 ## Known Limitations (Intentional for MVP)
 
-1. **MockTeacher:** Hardcoded responses (replace with real LLM for production)
+1. **DefaultTeacher stub:** Hardcoded responses (replace with real LLM for production)
 2. **Question Generation:** Naive strategy (always picks first gap)
 3. **Reward Gates:** Structure present, calculations simplified
 4. **WHY Chain Integration:** Chains created but not fully propagated in all node updates
@@ -190,7 +190,7 @@ Produces:
 
 ## Next Steps for Maintainers
 
-1. **Swap MockTeacher** for OpenAI/Claude API integration
+1. **Swap DefaultTeacher** for OpenAI/Claude API integration
 2. **Implement Verifier** V agent for hallucination detection
 3. **Calibrate D_deep** hyperparameter (currently 3)
 4. **Implement full Productive Utility Gate** with all three gates
@@ -215,7 +215,7 @@ Produces:
 ## Success Criteria Met
 
 ✓ Single learner instance: Learner class maintains G and manages gaps  
-✓ Single teacher model: TeacherInterface + MockTeacher  
+✓ Single teacher model: TeacherInterface + DefaultTeacher stub  
 ✓ Basic DAG: SQLite with nodes, edges, schema compliance  
 ✓ Didactic episode loop: Full implementation with state transitions  
 ✓ SEED node creation: Implemented with floor initialization  

@@ -81,11 +81,11 @@ class TeacherInterface(ABC):
         pass
 
 
-class MockTeacher(TeacherInterface):
-    """Mock teacher for MVP testing (returns hardcoded responses)."""
+class DefaultTeacher(TeacherInterface):
+    """Default teacher stub for MVP testing (returns hardcoded responses)."""
     
     def __init__(self, api_key: Optional[str] = None):
-        """Initialize mock teacher."""
+        """Initialize default teacher stub."""
         self.call_count = 0
         self.api_key = api_key
     

@@ -23,7 +23,7 @@ from dotenv import load_dotenv
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 
 from graph.dag import DAG
-from agents.teacher import MockTeacher
+from agents.teacher import DefaultTeacher
 from episode.episode_loop import DidacticEpisode, EpisodeConfig
 
 
@@ -70,9 +70,9 @@ def main():
     dag = DAG(db_path)
     print(f"Initialized DAG at: {db_path}")
     
-    # Initialize teacher (mock for MVP)
-    teacher = MockTeacher(api_key=first_teacher_api)
-    print(f"Initialized MockTeacher (FIRST_TEACHER_API={'SET' if first_teacher_api else 'MISSING'})")
+    # Initialize teacher stub for MVP
+    teacher = DefaultTeacher(api_key=first_teacher_api)
+    print(f"Initialized DefaultTeacher stub (FIRST_TEACHER_API={'SET' if first_teacher_api else 'MISSING'})")
     if second_teacher_api:
         print("SECOND_TEACHER_API is configured")
     if judge_api:

@@ -36,7 +36,7 @@ Phase 2/
 │   │   ├── state.py               # Epistemic state management (KK, KU, S, P)
 │   │   └── episode_loop.py        # Main didactic episode loop
 │   ├── agents/
-│   │   ├── teacher.py             # Teacher interface and MockTeacher
+│   │   ├── teacher.py             # Teacher interface and DefaultTeacher stub
 │   │   └── learner.py             # Learner agent implementation
 │   └── core/
 │       ├── seed.py                # SEED node creation & floor initialization
@@ -126,7 +126,7 @@ WHY chains (from SCHEMA_SPEC.md §3):
 - Partitions topics into bounded chunks
 - Answers questions with WHY chains
 - Interface: `TeacherInterface`
-- MVP uses `MockTeacher` for testing
+- MVP uses `DefaultTeacher` stub for testing
 
 **Learner** (from DIDACTIC_SPEC.md §3):
 - Maintains knowledge graph
@@ -182,7 +182,7 @@ This MVP demonstrates:
 ======================================================================
 
 Initialized DAG at: knowledge_graph.db
-Initialized MockTeacher
+Initialized DefaultTeacher stub
 
 === STARTING DIDACTIC EPISODE ===
 Topic: photosynthesis
@@ -270,7 +270,7 @@ Events logged: 42
 3. **Reward System:** Full implementation of productive utility gate
 4. **Adversarial Collaboration:** Multi-agent interaction
 5. **Generational Handoff:** Knowledge transfer between generations
-6. **Real Teacher Integration:** Swap MockTeacher for actual LLM API
+- **Real Teacher Integration:** Swap DefaultTeacher for actual LLM API
 
 ## Architecture References
 

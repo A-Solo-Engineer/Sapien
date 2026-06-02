@@ -59,7 +59,7 @@ Expected output: **"✓ Epistemic closure reached"**
    )
    ```
 
-2. **Integrate real teacher:** Replace `MockTeacher` in `main.py` line 52
+2. **Integrate real teacher:** Replace `DefaultTeacher` in `main.py` line 52
    ```python
    teacher = YourLLMTeacher()  # ← connect to OpenAI, Claude, etc.
    ```
