@@ -37,7 +37,7 @@ using only this documentation.
 > working foundation rather than open questions.
 
 
-## Phase 2 — Prototype (Work In Progress)
+## Phase 2 — Prototype ✓ Complete
 
 **Goal:** A minimal working proof of concept demonstrating
 the core didactic episode loop and knowledge graph.
@@ -70,9 +70,11 @@ episode on a defined topic, ask curiosity-driven questions,
 store WHY chains, and demonstrate epistemic closure when gaps
 are filled.
 
+**Phase 2 status: COMPLETE — 03 June 2026**
+
 ---
 
-## Phase 3 — Evaluation Framework
+## Phase 3 — Evaluation Framework (Work In Progress)
 
 **Goal:** Define and implement metrics for measuring whether
 Sapien is actually working as intended.
@@ -170,6 +172,6 @@ Regardless of where the roadmap goes:
 ---
 
 ### Sapien
-*Roadmap last updated: 29 May 2026 | Phase 1 marked complete* 
+*Roadmap last updated: 03 June 2026 | Phase 1 marked complete* 
 *License: AGPLv3* 
 *Author: Aarav | Forestritium*

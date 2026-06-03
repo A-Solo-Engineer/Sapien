@@ -19,6 +19,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com).
 - teacher.py
 - episode_loop.py
 - dag.py
+- README.md
+- ROADMAP.md
 
 ---
 
@@ -27,7 +29,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com).
 ### Added
 - Minimum Viable Product [Protoype]
 - Phase 2 Documentation
-- Phase 2 Codebase
+- Phase 2 Codebase [See PHASE_2_SUMMARY.md for more details](https://github.com/A-Solo-Engineer/Sapien/blob/main/Phase%202/PHASE_2_SUMMARY.md)
 
 ### Updated 
 - README.md

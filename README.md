@@ -42,13 +42,13 @@ Sapien is an attempt to rethink what learning itself means for artificial intell
 ![Sapien Architecture](assets/architecture.svg)
 
 Sapien is organized into seven layers:
-Layer 1 — Grounded Learning Substrate
-Layer 2 — Didactic Learning Engine (Generation 0)
-Layer 3 — 1st Generation Learner (Adversarial Collaboration)
-Layer 4 — Causal Knowledge Representation (DAG)
-Layer 5 — Continual Generational Learning
-Layer 6 — Human-in-the-Loop Oversight (Permanent)
-Layer 7 — Multi-Generational Error Correction
+- Layer 1 — Grounded Learning Substrate
+- Layer 2 — Didactic Learning Engine (Generation 0)
+- Layer 3 — 1st Generation Learner (Adversarial Collaboration)
+- Layer 4 — Causal Knowledge Representation (DAG)
+- Layer 5 — Continual Generational Learning
+- Layer 6 — Human-in-the-Loop Oversight (Permanent)
+- Layer 7 — Multi-Generational Error Correction
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for complete technical specification.
 
@@ -160,7 +160,7 @@ Areas where contribution is most needed:
 
 ***Date of Idea: 28 May 2026.***
 
-***Last updated: 30 May 2026.***
+***Last updated: 03 June 2026.***
 
 ---
 
@@ -175,8 +175,8 @@ AGPLv3 — see [LICENSE](LICENSE) for details.
 Sapien emerged from a conversation about why a small language model trained in LLM Developer never truly learned anything. It only optimized. That observation led me here.
 
 Related researchers whose work intersects with Sapien's ideas:
-- Jürgen Schmidhuber — intrinsic motivation and curiosity
-- Karl Friston — active inference
-- Yann LeCun — world models and joint embedding architectures
-- Gary Marcus — neurosymbolic AI
-- Judea Pearl — causal reasoning
+- ***Jürgen Schmidhuber*** — intrinsic motivation and curiosity
+- ***Karl Friston*** — active inference
+- ***Yann LeCun*** — world models and joint embedding architectures
+- ***Gary Marcus*** — neurosymbolic AI
+- ***Judea Pearl*** — causal reasoning
