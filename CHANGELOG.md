@@ -7,6 +7,34 @@ Format follows [Keep a Changelog](https://keepachangelog.com).
 
 ---
 
+## [1.0.2] - 03 June 2026
+
+### Fixed Bugs
+- WHY chain [Issue: depth shows 0 after answer integration]
+- Question generation [Issue: Uses hardcoded template]
+- Teacher model [Issue: Retuerns hardcoded 90% confidence]
+
+### Updated
+- learner.py
+- teacher.py
+- episode_loop.py
+- dag.py
+
+---
+
+## [1.0.1] - 31 May 2026
+
+### Added
+- Minimum Viable Product [Protoype]
+- Phase 2 Documentation
+- Phase 2 Codebase
+
+### Updated 
+- README.md
+- ROADMAP.md
+
+---
+
 ## [1.0.0] — 28 May 2026
 
 ### Added
@@ -52,5 +80,6 @@ Independently derived. 28 May 2026.
 
 *Future versions will be logged here as the architecture evolves.*
 
+### last update : *03 June 2026*
 *Sapien — AGPLv3*
 *Author: Aarav — A Solo Engineer*

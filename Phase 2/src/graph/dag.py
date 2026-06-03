@@ -125,6 +125,15 @@ class DAG:
             )
             conn.commit()
 
+    def update_node_why_chain(self, concept_id: str, why_chain: List[WhyStep]):
+        """Update a node's WHY chain in the database."""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute(
+                "UPDATE nodes SET why_chain = ?, updated_at = ? WHERE concept_id = ?",
+                (json.dumps([step.to_dict() for step in why_chain]), datetime.now().isoformat(), concept_id),
+            )
+            conn.commit()
+
     def add_edge(self, edge: Edge):
         """Add an edge to the graph."""
         with sqlite3.connect(self.db_path) as conn:

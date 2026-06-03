@@ -115,8 +115,16 @@ class DefaultTeacher(TeacherInterface):
         ]
     
     def answer_question(self, question: str, context: Optional[Dict[str, Any]] = None) -> TeacherResponse:
-        """Return mock answer with why chain."""
+        """Return answer with why chain that varies based on call count."""
         self.call_count += 1
+        
+        # Vary overall confidence based on call count
+        confidence = max(0.6, 0.95 - (self.call_count * 0.05))
+        
+        # Vary individual step certainties
+        step1_certainty = min(0.98, 0.95 + (self.call_count * 0.01))
+        step2_certainty = max(0.75, 0.90 - (self.call_count * 0.03))
+        step3_certainty = max(0.70, 0.85 - (self.call_count * 0.05))
         
         return TeacherResponse(
             answer=f"This is a mock answer to: {question}",
@@ -124,20 +132,20 @@ class DefaultTeacher(TeacherInterface):
                 {
                     "claim": "The question addresses a conceptual gap in understanding",
                     "source": "question_analysis",
-                    "certainty": 0.95,
+                    "certainty": step1_certainty,
                 },
                 {
                     "claim": "The answer provides direct explanation",
                     "source": "knowledge_base",
-                    "certainty": 0.9,
+                    "certainty": step2_certainty,
                 },
                 {
                     "claim": "The explanation connects to foundational concepts",
                     "source": "causal_inference",
-                    "certainty": 0.85,
+                    "certainty": step3_certainty,
                 },
             ],
-            confidence=0.9,
+            confidence=confidence,
             new_concepts=[f"concept_{self.call_count}"],
         )
     

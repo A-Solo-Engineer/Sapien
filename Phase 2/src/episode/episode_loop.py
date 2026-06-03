@@ -72,7 +72,7 @@ class DidacticEpisode:
         self.teacher = teacher
         self.dag = dag
         self.episode_id = str(uuid4())
-        self.learner = Learner(self.episode_id, dag)
+        self.learner = Learner(self.episode_id, dag, config.topic)
         self.logs: List[EpisodeLog] = []
         self.question_count = 0
         self.iteration_count = 0

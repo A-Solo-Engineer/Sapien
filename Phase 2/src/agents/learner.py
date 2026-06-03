@@ -25,10 +25,11 @@ from agents.teacher import Chunk, TeacherResponse
 class Learner:
     """Learner agent that maintains and updates the knowledge graph."""
     
-    def __init__(self, episode_id: str, dag: DAG):
+    def __init__(self, episode_id: str, dag: DAG, topic: str = "unknown"):
         """Initialize learner with a DAG and episode context."""
         self.episode_id = episode_id
         self.dag = dag
+        self.topic = topic
         self.state_manager = EpistemicStateManager(dag)
         self.state_manager.initialize_from_graph()
         self.question_counter = 0
@@ -114,7 +115,23 @@ class Learner:
         
         if gap_node:
             self.question_counter += 1
-            question = f"What is the detailed explanation of {gap_node.label}?"
+            suffix = f" (q{self.question_counter})"
+            
+            # Generate varied questions based on epistemic status
+            if gap_node.status == NodeStatus.KNOWN_UNKNOWN:
+                # Already identified gap - ask for deeper understanding
+                statement_preview = gap_node.statement[:100] if gap_node.statement else "this concept"
+                question = f"Why does {gap_node.label} work the way it does? Specifically: {statement_preview}{suffix}"
+            elif gap_node.status == NodeStatus.SEED:
+                # New domain discovered - ask what it is
+                question = f"What is {gap_node.label} and how does it connect to {self.topic}?{suffix}"
+            elif gap_node.status == NodeStatus.PENDING:
+                # Partially connected - ask about relations
+                question = f"How does {gap_node.label} relate to the concepts already learned?{suffix}"
+            else:
+                # Default fallback
+                question = f"What is the detailed explanation of {gap_node.label}?{suffix}"
+            
             return question
         
         return None
@@ -143,6 +160,9 @@ class Learner:
         if gap_node:
             gap_node = add_why_chain_to_node(gap_node, why_chain)
             gap_node.uncertainty = 1.0 - response.confidence  # Invert for uncertainty
+            
+            # Update the WHY chain in the database
+            self.dag.update_node_why_chain(gap_node_id, why_chain)
             
             # Create new nodes for concepts mentioned in answer
             concept_ids = {}
