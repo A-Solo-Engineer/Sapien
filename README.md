@@ -109,8 +109,7 @@ See [LIMITATIONS.md](LIMITATIONS.md) for detailed analysis of each problem.
 
 ## Project Status
 
-Sapien has completed Phase 1 of its development roadmap —
-documentation and theoretical specification — and is currently at Phase 2: prototype implementation.
+Sapien has completed Phase 1 and Phase 2 of its development roadmap and is currently at Phase 3: Evaluation Framework
 
 Phase 1 produced a complete theoretical foundation:
 - Core architecture specification
@@ -120,6 +119,13 @@ Phase 1 produced a complete theoretical foundation:
 - Reward signal formal definition
 - Axiomatic floor proposal
 - Contradiction resolution framework
+
+Phase 2 produced a minimum viable prototype demonstrating the core didactic episode loop, knowledge graph storage, and SEED node creation.
+- Didactic episode loop
+- Basic DAG implementation
+- Single teacher model integration
+- WHY chain storage
+- Curiosity-driven question generation
 
 See [ROADMAP.md](ROADMAP.md) for the full development plan.
 
@@ -160,7 +166,7 @@ Areas where contribution is most needed:
 
 ***Date of Idea: 28 May 2026.***
 
-***Last updated: 03 June 2026.***
+***Last updated: 05 June 2026.***
 
 ---
 
